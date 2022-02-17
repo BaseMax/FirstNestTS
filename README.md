@@ -1,14 +1,38 @@
-## Test
+## First Nest TS (TypeScript)
 
-### Insert
+### Get All
+
+GET http://localhost:3000/products/
+
+### Get one
+
+GET http://localhost:3000/products/put-id-here/
+
+### Update one
+
+PATCH http://localhost:3000/products/put-id-here/
+
+```json
+{
+"title": "My new title",
+"price": 1700
+"description": "This is my updated product",
+}
+```
+
+### Delete one
+
+DELETE http://localhost:3000/products/put-id-here/
+
+### Insert a new
 
 http://localhost:3000/products/
 
 ```json
 {
 "title": "My title",
-"description": "This is first product",
 "price": 1000
+"description": "This is first product",
 }
 ```
 
@@ -19,6 +43,8 @@ http://localhost:3000/products/
     "id": "0.23849951866423913"
 }
 ```
+
+---
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
