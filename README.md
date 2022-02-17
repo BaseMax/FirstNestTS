@@ -1,16 +1,18 @@
 ## First Nest TS (TypeScript)
 
+## Routes
+
 ### Get All
 
-GET http://localhost:3000/products/
+`GET http://localhost:3000/products/`
 
 ### Get one
 
-GET http://localhost:3000/products/put-id-here/
+`GET http://localhost:3000/products/put-id-here/`
 
 ### Update one
 
-PATCH http://localhost:3000/products/put-id-here/
+`PATCH http://localhost:3000/products/put-id-here/`
 
 ```json
 {
@@ -22,11 +24,11 @@ PATCH http://localhost:3000/products/put-id-here/
 
 ### Delete one
 
-DELETE http://localhost:3000/products/put-id-here/
+`DELETE http://localhost:3000/products/put-id-here/`
 
 ### Insert a new
 
-http://localhost:3000/products/
+`POST http://localhost:3000/products/`
 
 ```json
 {
