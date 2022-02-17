@@ -1,3 +1,25 @@
+## Test
+
+### Insert
+
+http://localhost:3000/products/
+
+```json
+{
+"title": "My title",
+"description": "This is first product",
+"price": 1000
+}
+```
+
+**Output:**
+
+```
+{
+    "id": "0.23849951866423913"
+}
+```
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
