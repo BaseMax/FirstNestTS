@@ -1,5 +1,7 @@
 ## First Nest TS (TypeScript)
 
+First **NestJS** project powered by TypeScript (Simple CRUD)
+
 ## Routes
 
 ### Get All
