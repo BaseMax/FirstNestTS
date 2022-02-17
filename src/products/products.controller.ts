@@ -17,13 +17,13 @@ export class ProductsController {
     @Post()
     addProduct(
         @Body('title') prodTitle: string,
-        @Body('description') prodDesc: string,
         @Body('price') prodPrice: number,
+        @Body('description') prodDesc: string,
     ) {
         const generatedId = this.productsService.insertProduct(
             prodTitle,
-            prodDesc,
             prodPrice,
+            prodDesc,
         );
         return {
             id: generatedId
@@ -44,10 +44,10 @@ export class ProductsController {
     updateProduct(
         @Param('id') prodId: string,
         @Body('title') prodTitle: string,
-        @Body('description') prodDesc: string,
         @Body('price') prodPrice: number,
+        @Body('description') prodDesc: string,
     ) {
-        this.productsService.updateProduct(prodId, prodTitle, prodDesc, prodPrice);
+        this.productsService.updateProduct(prodId, prodTitle, prodPrice, prodDesc);
         return null;
     }
 
